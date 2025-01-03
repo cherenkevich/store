@@ -1,0 +1,1 @@
+<script src="/assets/scripts/scripts.js?<?= filemtime('./assets/scripts/scripts.js') ?>"></script>

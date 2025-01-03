@@ -1,0 +1,11 @@
+.DS_STORE
+node_modules
+assets/
+dist/
+*.sublime-project
+*.sublime-workspace
+.sass-cache
+npx
+site/wp-content/updraft
+*.pdf
+secrets.php

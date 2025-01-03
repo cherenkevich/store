@@ -1,0 +1,17 @@
+mixin slot--cart(id, title, meta, price)
+    .slot(data-price=price)
+        .slot__left
+            .slot__primary
+                h3: a(href=id + ".html")= title
+            .slot__secondary= meta
+            .slot__tertiary
+                span Removed.
+                button
+                    label(for="remove-" + id) Put it back?
+        .slot__right
+            .slot__primary 
+                .price= price + "€"
+        .slot__hanging
+            .slot__remove 
+                button: label(for="remove-" + id) &times;
+                input.slot__status(type="checkbox" id="remove-" + id)

@@ -1,0 +1,607 @@
+// Mixins
+
+=tap
+    transition: var(--transition)
+    transition-property: opacity, color, background-color
+    cursor: pointer
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    -webkit-tap-highlight-color: transparent
+
+    @media (hover: hover)
+
+        &:hover
+            opacity: 0.72
+
+    &:active
+        opacity: 0.56
+        
+// Fonts
+
+@font-face
+    font-family: 'stratos-web'
+    src: url('../fonts/Stratos.otf') format('opentype')
+    font-display: swap
+    font-weight: 400
+    font-style: normal
+
+@view-transition
+    navigation: auto
+
+// Variables
+
+:root
+    --color--primary: #000
+    --color--secondary: #bcb3a7
+    --color--secondary-16: rgba(188, 179, 167, .16)
+    --color--secondary-20: rgba(188, 179, 167, .20)
+    
+    --color--red: #f00
+    --color--red-08: rgba(255, 0, 0, .08)
+    --color--red-12: rgba(255, 0, 0, .12)
+    --color--red-48: rgba(255, 0, 0, .48)
+
+    --font-family--text: "stratos-web", serif
+    --font-size--m: clamp(1.125rem, 0.9217rem + 0.9036vw, 1.5rem)
+    --font-lh--m: clamp(1.5rem, 1.2289rem + 1.2048vw, 2rem)
+    --font--m: var(--font-size--m) / var(--font-lh--m) var(--font-family--text)
+
+    --otf: "pnum" 1
+
+    --transition: all .1s ease-in-out
+    --transition--l: all .2s ease-in-out
+    --transition--xl: all .4s ease-in-out
+
+    --fluid-16-24: clamp(1rem, 0.7289rem + 1.2048vw, 1.5rem)
+    --fluid-24-64: clamp(1.5rem, 0.1446rem + 6.0241vw, 4rem)
+    --fluid-64-96: clamp(4rem, 2.9157rem + 4.8193vw, 6rem)
+    --fluid-16-56: clamp(1rem, -0.3554rem + 6.0241vw, 3.5rem)
+    --fluid-128-160: clamp(8rem, 6.9157rem + 4.8193vw, 10rem)
+    --fluid-128-192: clamp(8rem, 5.8313rem + 9.6386vw, 12rem)
+    --fluid-250-553: clamp(15.625rem, 5.3577rem + 45.6325vw, 34.5625rem)
+    --fluid-270-573: clamp(16.875rem, 6.6077rem + 45.6325vw, 35.8125rem)
+
+    --u--primary: url("../images/underline--primary.svg") repeat-x bottom
+    --u--secondary: url("../images/underline--secondary.svg") repeat-x bottom    
+
+// Primitives
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    background-repeat: no-repeat
+    background-position: center
+
+html
+    height: 100%
+    display: flex
+    flex-direction: column
+    scroll-snap-type: y mandatory
+
+body
+    font: var(--font--m)
+    color: var(--color-primary) 
+    height: 100%
+    display: flex
+    flex-direction: column
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-kerning: normal
+    text-rendering: optimizeLegibility
+    font-feature-settings: var(--otf)
+
+p
+
+    & + p
+        margin-top: clamp(0.75rem, 0.3434rem + 1.8072vw, 1.5rem)
+
+h1
+    font: var(--font--m)
+
+h2
+    font: var(--font--m)
+
+h3
+    font: var(--font--m)
+
+a
+    +tap
+    color: var(--color--black)
+    text-decoration: none
+    background: var(--u--primary)
+
+label
+    cursor: pointer
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select
+    appearance: none
+    border-radius: 4px
+    border: none
+    background-color: var(--color--secondary-16)
+    font: var(--font--m)
+    width: 100%
+    padding: 8px 12px
+
+    &:focus
+        outline: none
+        background-color: var(--color--secondary-20)
+
+::placeholder
+    color: var(--color--secondary)
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+input[type=number]
+    -moz-appearance: textfield
+
+select
+    cursor: pointer
+    background-image: url("../images/dropdown.svg")
+    background-repeat: no-repeat
+    background-position: calc(100% - 12px) center
+    background-size: var(--fluid-16-24) var(--fluid-16-24)
+    color: var(--color--primary)
+
+    &:has(option[value=""]:checked)
+        color: var(--color--secondary)
+
+        &:user-invalid
+            color: var(--color--red-48)
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid
+    background-color: var(--color--red-08)
+
+    &:focus
+        background-color: var(--color--red-12)
+
+    &::placeholder
+        color: var(--color--red-48)
+
+input[type="submit"],
+button,
+label
+    +tap
+    appearance: none
+    font: var(--font--m)
+    padding: 0
+    border: none
+    border-radius: none
+    color: var(--color--primary)
+    background: var(--u--primary)
+    user-select: none
+
+    &:focus
+        opacity: .56
+        outline: none
+
+img
+    display: block
+    max-width: 100%
+    height: auto
+
+// App
+    
+.app
+    display: flex
+    flex-direction: column
+    height: 100%
+
+    .app__header,
+    .app__heading,
+    .app__list,
+    .app__feed,
+    .app__text,
+    .app__actions,
+    .app__footer
+        margin-left: auto
+        margin-right: auto
+        padding-left: var(--fluid-16-56)
+        padding-right: var(--fluid-16-56)
+        width: 100%
+        max-width: 720px
+
+    .app__column
+        padding-left: calc(16.67% + 8px)
+        padding-right: 8px
+
+    .app__header
+        padding-top: var(--fluid-24-64)
+        margin-bottom: var(--fluid-128-160)
+
+    .app__cart
+        position: absolute
+        top: var(--fluid-24-64)
+        right: var(--fluid-24-64)
+        z-index: 999
+        pointer-events: none
+
+    .app__heading
+        margin-bottom: var(--fluid-64-96)
+
+    .app__list
+        margin-bottom: var(--fluid-128-160)
+
+        &:has( + .app__text)
+            margin-bottom: 32px
+
+        &:not(:has(.list__row))
+            display: none
+
+    .app__feed
+        margin-bottom: var(--fluid-128-160)
+
+    .app__text
+        margin-bottom: var(--fluid-128-160)
+
+        &:has( + .app__text)
+            margin-bottom: var(--fluid-64-96)
+
+    .app__carousel
+
+    .app__actions
+        margin-bottom: var(--fluid-64-96)
+
+    .app__footer
+        margin-top: auto
+        padding-bottom: var(--fluid-24-64)
+    
+    .app__carousel
+        margin-bottom: var(--fluid-16-24)
+
+    .html--index &,
+    .html--product & 
+        
+        .app__cart
+            position: fixed
+
+    .html--index &
+
+        .app__header
+            scroll-snap-align: start
+
+        .app__footer
+            scroll-snap-align: end
+
+// Helpers
+
+.pale
+    color: var(--color--secondary)
+
+    a
+        background: var(--u--secondary)
+
+.price
+    white-space: nowrap
+
+.email
+
+.rarr
+    position: relative
+
+    &:after
+        content: '→'
+        padding-left: 0.3em
+        position: absolute
+
+.larr
+
+    &:before
+        content: '←'
+        padding-right: 0.3em
+        position: absolute
+        transform: translateX(-100%)
+
+// Blocks
+
+.header
+    .header__logo
+        
+    .header__root
+        color: var(--color--secondary)
+        
+        a
+            background: none
+
+    .html--index &
+        
+        .header__logo a 
+            pointer-events: none
+            background: none
+            cursor: text
+            
+
+.cart
+    pointer-events: all
+
+    .cart__logo
+
+        span:not(:empty)
+            margin-left: 0.3em
+
+            &:before
+                content: '· '
+    
+    &.cart--empty .cart__logo,
+    .html--success & a,
+    .html--cart & a
+        pointer-events: none
+        color: var(--color--secondary)
+        background: none
+
+.heading
+
+.slot
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    position: relative
+
+    .slot__left
+
+    .slot__right
+        padding-left: 16px
+
+    .slot__primary
+    
+    .slot__secondary
+        color: var(--color--secondary)
+
+    .slot__tertiary
+
+    .slot__hanging
+        position: absolute
+        top: 0
+        left: -16px
+        transform: translateX(-100%)
+
+    .slot__remove
+        width: 24px
+        text-align: center
+        transform: translateX(8px)
+
+        label
+            width: 100%
+            color: var(--color--secondary)
+            background: none
+            display: block
+
+    .slot__status
+        display: none
+
+    .teaser &
+        .slot__primary span
+            background: var(--u--primary)
+
+    &:has(.slot__status)
+
+        .slot__tertiary
+            display: none
+
+    &:has(.slot__status:checked)
+        .slot__hanging
+            display: none
+        
+        .slot__primary 
+            color: var(--color--secondary)
+            
+            a
+                background: var(--u--secondary)
+        
+        .slot__tertiary
+            display: block
+            color: var(--color--secondary)
+
+.teaser
+    display: block
+    background: none
+
+    .teaser__media
+        width: 100%
+        margin-bottom: var(--fluid-16-24)
+        position: relative
+
+    .teaser__image
+        position: relative
+
+        &:after
+            content: ''
+            display: block
+            opacity: 0.06
+            background-color: var(--color--primary)
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            pointer-events: none
+            z-index: 2
+
+        img
+            display: block
+            position: relative
+            z-index: 1
+
+        &.teaser__image--cover
+            margin-left: calc(16.67% + 8px)
+            margin-right: calc(16.67% + 8px)
+            position: relative
+
+        &.teaser__image--spread
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: calc(100% - 16px)
+            z-index: 1
+
+        &.teaser__image--top
+            z-index: 200 !important
+
+        &.teaser__image:nth-child(1)
+            z-index: 100
+
+        &.teaser__image:nth-child(2)
+            z-index: 99
+
+        &.teaser__image:nth-child(3)
+            z-index: 98
+
+        &.teaser__image:nth-child(4)
+            z-index: 97
+
+        &.teaser__image:nth-child(5)
+            z-index: 96
+
+        &.teaser__image:nth-child(6)
+            z-index: 95
+
+        &.teaser__image:nth-child(7)
+            z-index: 94
+
+        &.teaser__image:nth-child(8)
+            z-index: 93
+
+        &.teaser__image:nth-child(9)
+            z-index: 92
+
+        &.teaser__image:nth-child(10)
+            z-index: 91
+
+    .teaser__caption
+        +tap
+        padding-left: calc(16.67% + 8px)
+        padding-right: 8px
+
+    @media (hover: hover)
+
+        &:hover
+            opacity: 1
+
+            .teaser__caption
+                opacity: 0.72
+
+    &:active
+        opacity: .96
+        
+        .teaser__caption
+            opacity: 0.56
+
+.list
+
+    .list__row:not(:last-child)
+        margin-bottom: 32px
+
+    .list__row--footer
+        margin-top: var(--fluid-64-96)
+
+    &.list--cart
+
+        .list__row--shipping,
+        .list__row--total,
+        .list__row--footer
+            display: none
+
+        &:has(.slot__status:not(:checked))
+            .list__row--shipping,
+            .list__row--total,
+            .list__row--footer
+                display: block
+
+.feed
+
+    .feed__item
+        scroll-snap-align: center
+
+    .feed__item:not(:last-child)
+        margin-bottom: var(--fluid-64-96)
+
+.text
+
+.actions
+
+    .actions__action:not(:last-child)
+        margin-bottom: var(--fluid-16-24)
+
+.footer
+    color: var(--color--secondary)
+
+    a
+        background: var(--u--secondary)
+
+.add
+
+    .add__add
+    
+    .add__added
+        display: none
+
+    .add__state
+        display: none
+
+    &:has(.add__state:checked)
+
+        .add__add
+            display: none
+    
+        .add__added
+            display: block
+
+.carousel    
+    max-width: 100%
+    max-height: var(--fluid-250-553)
+    overflow: hidden
+
+    .carousel__wrapper
+        padding-bottom: 20px
+        overflow-y: scroll
+        scroll-snap-type: x mandatory
+
+    .carousel__content
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        width: 100%
+
+    .carousel__image
+        padding-left: 16px
+        align-self: center
+        flex: 0 0 auto
+        scroll-snap-align: start
+
+        div
+            position: relative 
+
+            &:after
+                content: ''
+                display: block
+                opacity: 0.06
+                background-color: var(--color--primary)
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                pointer-events: none
+                z-index: 2
+
+        img
+            height: var(--fluid-250-553)
+            width: auto
+            position: relative
+            z-index: 1
+
+        &:first-child
+            padding-left: var(--fluid-24-64)
+
+        &:last-child
+            padding-right: var(--fluid-24-64)
+            scroll-snap-align: end

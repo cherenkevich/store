@@ -1,0 +1,52 @@
+include ../blocks/_
+
+doctype html
+html.html.html--product(lang="en")
+    +head
+    
+    body 
+        .app
+            .app__header
+                .app__column
+                    +header
+
+            .app__cart
+                +cart
+
+            .app__heading
+                .app__column
+                    h1.heading Issue 5. <br />Berlin
+
+            .app__carousel
+                .carousel
+                    .carousel__wrapper
+                        .carousel__content
+                            .carousel__image: div: img(src="products/issue-5-berlin/1.jpg" width="845" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/2.jpg" width="1691" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/3.jpg" width="1691" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/9.jpg" width="1691" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/10.jpg" width="1691" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/14.jpg" width="1691" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/19.jpg" width="1691" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/20.jpg" width="1691" height="1200")
+                            .carousel__image: div: img(src="products/issue-5-berlin/24.jpg" width="1691" height="1200")
+
+            .app__actions
+                .app__column
+                    +actions
+
+            .app__text
+                .app__column
+                    .text
+                        p No foreword this time. 
+
+            .app__text
+                .app__column
+                    .text
+                        p: a.larr(href="/") Back to all the issues
+
+            .app__footer
+                .app__column
+                    +footer
+
+        +foot

@@ -1,0 +1,98 @@
+include ../blocks/_
+
+doctype html
+html(lang="en")
+    +head
+    
+    body 
+        .app
+            .app__header
+                .app__column
+                    +header
+                
+            .app__cart
+                +cart
+
+            .app__heading
+                .app__column
+                    h1.heading Delivery details
+
+            .app__list
+                .app__column
+                    form.list(action="success.html" method="" name="delivery")
+                        .list__row
+                            select(name="country" id="country" placeholder="Country" required)
+                                option(value="") Select a country
+                                option(value="andorra") Andorra
+                                option(value="armenia") Armenia
+                                option(value="austria") Austria
+                                option(value="azerbaijan") Azerbaijan
+                                option(value="belarus") Belarus
+                                option(value="belgium") Belgium
+                                option(value="bosnia_and_herzegovina") Bosnia and Herzegovina
+                                option(value="bulgaria") Bulgaria
+                                option(value="croatia") Croatia
+                                option(value="cyprus") Cyprus
+                                option(value="czech_republic") Czech Republic
+                                option(value="denmark") Denmark
+                                option(value="estonia") Estonia
+                                option(value="finland") Finland
+                                option(value="france") France
+                                option(value="georgia") Georgia
+                                option(value="germany") Germany
+                                option(value="greece") Greece
+                                option(value="hungary") Hungary
+                                option(value="iceland") Iceland
+                                option(value="ireland") Ireland
+                                option(value="italy") Italy
+                                option(value="kazakhstan") Kazakhstan
+                                option(value="kosovo") Kosovo
+                                option(value="latvia") Latvia
+                                option(value="liechtenstein") Liechtenstein
+                                option(value="lithuania") Lithuania
+                                option(value="luxembourg") Luxembourg
+                                option(value="malta") Malta
+                                option(value="moldova") Moldova
+                                option(value="monaco") Monaco
+                                option(value="montenegro") Montenegro
+                                option(value="netherlands") Netherlands
+                                option(value="north_macedonia") North Macedonia
+                                option(value="norway") Norway
+                                option(value="poland") Poland
+                                option(value="portugal") Portugal
+                                option(value="romania") Romania
+                                option(value="san_marino") San Marino
+                                option(value="serbia") Serbia
+                                option(value="slovakia") Slovakia
+                                option(value="slovenia") Slovenia
+                                option(value="spain") Spain
+                                option(value="sweden") Sweden
+                                option(value="switzerland") Switzerland
+                                option(value="turkey") Turkey
+                                option(value="ukraine") Ukraine
+                                option(value="united_kingdom") United Kingdom
+                                option(value="vatican_city") Vatican City
+
+                        .list__row
+                            input(type="text" name="city" id="city" placeholder="City" required)
+
+                        .list__row
+                            input(type="number" name="zip" id="zip" placeholder="Postal code" required inputmode="numeric" pattern="\d*")
+
+                        .list__row
+                            input(type="text" name="address" id="address" placeholder="Address" required)
+
+                        .list__row
+                            input(type="text" name="name" id="name" placeholder="Name" required)
+
+                        .list__row
+                            input(type="email" email="email" id="email" placeholder="E-mail" required)
+
+                        .list__row.list__row--footer 
+                            button.rarr Checkout
+                
+            .app__footer
+                .app__column
+                    +footer
+
+        +foot

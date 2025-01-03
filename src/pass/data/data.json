@@ -1,0 +1,135 @@
+{
+    "issue-5-berlin": {
+        "id": "issue-5-berlin",
+        "title": "Issue 5. Berlin",
+        "type": "paper",
+        "price": "15",
+        "cover": ["issue-5-berlin/1.jpg", 845, 1200],
+        "meta": "48 pages · 148.5 × 210 mm",
+        "images": [
+            ["issue-5-berlin/2.jpg", 1691, 1200],
+            ["issue-5-berlin/3.jpg", 1691, 1200],
+            ["issue-5-berlin/9.jpg", 1691, 1200],
+            ["issue-5-berlin/10.jpg", 1691, 1200],
+            ["issue-5-berlin/14.jpg", 1691, 1200],
+            ["issue-5-berlin/19.jpg", 1691, 1200],
+            ["issue-5-berlin/20.jpg", 1691, 1200]
+        ],
+        "description": "<p>No foreword this time. </p>",
+        "pdf": "issue-5-berlin-pdf"
+    },
+    "issue-5-berlin-pdf": {
+        "id": "issue-5-berlin-pdf",
+        "title": "Issue 5. Berlin",
+        "type": "pdf",
+        "price": "5",
+        "download": "/pdf/5-berlin-65136.pdf",
+        "parent": "issue-5-berlin"
+    },
+    "issue-4-paris": {
+        "id": "issue-4-paris",
+        "title": "Issue 4. Paris. The City",
+        "type": "paper",
+        "price": "15",
+        "cover": ["issue-4-paris/1.jpg", 845, 1200],
+        "meta": "48 pages · 148.5 × 210 mm",
+        "images": [
+            ["issue-4-paris/12.jpg", 1691, 1200],
+            ["issue-4-paris/4.jpg", 1691, 1200],
+            ["issue-4-paris/6.jpg", 1691, 1200],
+            ["issue-4-paris/9.jpg", 1691, 1200],
+            ["issue-4-paris/18.jpg", 1691, 1200],
+            ["issue-4-paris/19.jpg", 1691, 1200]
+        ],
+        "description": "<p>I have already done an issue about Paris in February. It was dedicated to street photography and local people. In this issue I want to tell about the city itself. </p><p>Last time I was in Paris in 2013. And since then, it’s like I’ve been preparing for the next trip. I have been into the Impressionists, Marc Chagall, Chaim Soutine, the French New Wave. But the trip was short and I didn’t have time to dedicate it to my icons. Instead I just walked around the city, filmed a lot and was hanging out in record stores. </p><p>I would like to have a couple more photos in this issue — with a view of the Barbès—Rochechouart bridge, which I passed one night. But then I preferred to hold the camera to myself and walk as quickly as possible past the burning barrels while the local guys shouted me “Le pigeon! Le pigeon!”.</p>",
+        "pdf": "issue-4-paris-pdf"
+    },
+    "issue-4-paris-pdf": {
+        "id": "issue-4-paris-pdf",
+        "title": "Issue 4. Paris. The City",
+        "type": "pdf",
+        "price": "5",
+        "download": "/pdf/4-paris-01938.pdf",
+        "parent": "issue-4-paris"
+    },
+    "issue-3-warsaw": {
+        "id": "issue-3-warsaw",
+        "title": "Issue 3. Warsaw",
+        "type": "paper",
+        "price": "15",
+        "cover": ["issue-3-warsaw/1.jpg", 845, 1200],
+        "meta": "52 pages · 148.5 × 210 mm",
+        "images": [
+            ["issue-3-warsaw/3.jpg", 1691, 1200],
+            ["issue-3-warsaw/5.jpg", 1691, 1200],
+            ["issue-3-warsaw/6.jpg", 1691, 1200],
+            ["issue-3-warsaw/9.jpg", 1691, 1200],
+            ["issue-3-warsaw/10.jpg", 1691, 1200],
+            ["issue-3-warsaw/12.jpg", 1691, 1200],
+            ["issue-3-warsaw/15.jpg", 1691, 1200]
+        ],
+        "description": "<p>In January, I was invited to speak at the Google for Startups platform in Warsaw. I presented my side-projects from the last ten years, which you can read about <a href='https://cherenkevich.com' target='_blank'>on my website</a>.</p><p>The presentation was not the main purpose of the trip, because any trip to Warsaw for me is an opportunity to meet my dear belarusian friends, make new acquaintances and take new photos.</p><p>Also Danka and I were invited to attend a replay of the Śpievy choir - a side project of Rusia from Šuma. After that we canceled our tickets to Prague and stayed in Warsaw for a few more days to attend the Varušniak party. Varušniak is a concert and techno rave made by belarusian musicians and promoters. Highly recommended!</p><p>Usually at the end of any issue I list my favorite places in the city. This time I want to dedicate not just one spread, but the whole zine to bars and restaurants in Warsaw, which were opened by my friends from Belarus.</p>",
+        "pdf": "issue-3-warsaw-pdf"
+    },
+    "issue-3-warsaw-pdf": {
+        "id": "issue-3-warsaw-pdf",
+        "title": "Issue 3. Warsaw",
+        "type": "pdf",
+        "price": "5",
+        "download": "/pdf/3-warsaw-48294.pdf",
+        "parent": "issue-3-warsaw"
+    },
+    "issue-2-paris": {
+        "id": "issue-2-paris",
+        "title": "Issue 2. Paris. The Humans",
+        "type": "paper",
+        "price": "15",
+        "cover": ["issue-2-paris/1.jpg", 845, 1200],
+        "meta": "48 pages · 148.5 × 210 mm",
+        "images": [
+            ["issue-2-paris/7.jpg", 1691, 1200],
+            ["issue-2-paris/4.jpg", 1691, 1200],
+            ["issue-2-paris/6.jpg", 1691, 1200],
+            ["issue-2-paris/9.jpg", 1691, 1200],
+            ["issue-2-paris/15.jpg", 1691, 1200],
+            ["issue-2-paris/18.jpg", 1691, 1200],
+            ["issue-2-paris/19.jpg", 1691, 1200]
+        ],
+        "description": "<p>I haven’t been to Paris in over a decade. Every time I tried to go back something went wrong and the trip was canceled. And after the last attempt, there was a pandemic. After that I haven’t been even looking that way for three years. Until I found out that Woody Allen and his New Orleans jazz band were going on a European tour.</p><p>To hear Woody Allen play the clarinet was such a pipe dream for me that I was afraid to put it on my wish list. I didn’t even think I’d be in Manhattan with Woody alive and listening to him there. And then Woody came by himself. </p><p>I have to learn to dream boldly. </p><p>Shake That Thing.</p>",
+        "pdf": "issue-2-paris-pdf"
+    },
+    "issue-2-paris-pdf": {
+        "id": "issue-2-paris-pdf",
+        "title": "Issue 2. Paris. The Humans",
+        "type": "pdf",
+        "price": "5",
+        "download": "/pdf/2-paris-36489.pdf",
+        "parent": "issue-2-paris"
+    },
+    "issue-1-berlin": {
+        "id": "issue-1-berlin",
+        "title": "Issue 1. Berlin. A One Day Journey",
+        "type": "paper",
+        "price": "15",
+        "cover": ["issue-1-berlin/1.jpg", 845, 1200],
+        "meta": "48 pages · 148.5 × 210 mm",
+        "images": [
+            ["issue-1-berlin/3.jpg", 1691, 1200],
+            ["issue-1-berlin/4.jpg", 1691, 1200],
+            ["issue-1-berlin/9.jpg", 1691, 1200],
+            ["issue-1-berlin/17.jpg", 1691, 1200],
+            ["issue-1-berlin/22.jpg", 1691, 1200],
+            ["issue-1-berlin/23.jpg", 1691, 1200]
+        ],
+        "description": "<p>A one day journey. Selected photos. Acquired records. Favourite places.</p>",
+        "pdf": "issue-1-berlin-pdf"
+    },
+    "issue-1-berlin-pdf": {
+        "id": "issue-1-berlin-pdf",
+        "title": "Issue 1. Berlin. A One Day Journey",
+        "type": "pdf",
+        "price": "5",
+        "download": "/pdf/1-berlin-10301.pdf",
+        "parent": "issue-1-berlin"
+    }
+}

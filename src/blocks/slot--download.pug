@@ -1,0 +1,8 @@
+mixin slot--download(id, title)
+    .slot
+        .slot__left
+            .slot__primary
+                h3: a(href=id + ".html")= title
+            .slot__secondary PDF-version
+            .slot__tertiary
+                a.rarr(href="/" download) Download

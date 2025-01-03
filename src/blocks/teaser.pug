@@ -1,0 +1,78 @@
+mixin teaser(id, title)
+    a.teaser(href=id + ".html")
+        .teaser__media
+            if id == "issue-1-berlin"
+                +teaser__media--1
+
+            if id == "issue-2-paris"
+                +teaser__media--2
+
+            if id == "issue-3-warsaw"
+                +teaser__media--3
+
+            if id == "issue-4-paris"
+                +teaser__media--4
+
+            if id == "issue-5-berlin"
+                +teaser__media--5
+
+        .teaser__caption
+            .slot
+                .slot__left
+                    .slot__primary 
+                        h3 
+                            span= title
+                    .slot__secondary Paper version · 15 € <br />PDF-version · 5 €
+
+
+mixin teaser__media--1
+    .teaser__image.teaser__image--cover.teaser__image--top: img(src="products/issue-1-berlin/1.jpg" width="845" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-1-berlin/3.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-1-berlin/4.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-1-berlin/9.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-1-berlin/17.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-1-berlin/21.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-1-berlin/23.jpg" width="1691" height="1200")
+
+mixin teaser__media--2
+    .teaser__image.teaser__image--cover.teaser__image--top: img(src="products/issue-2-paris/1.jpg" width="845" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/7.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/4.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/6.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/9.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/15.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/18.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/19.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-2-paris/23.jpg" width="1691" height="1200")
+
+mixin teaser__media--3
+    .teaser__image.teaser__image--cover.teaser__image--top: img(src="products/issue-3-warsaw/1.jpg" width="845" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/3.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/5.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/6.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/9.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/10.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/12.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/15.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-3-warsaw/25.jpg" width="1691" height="1200")
+
+mixin teaser__media--4
+    .teaser__image.teaser__image--cover.teaser__image--top: img(src="products/issue-4-paris/1.jpg" width="845" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-4-paris/12.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-4-paris/4.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-4-paris/6.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-4-paris/9.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-4-paris/18.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-4-paris/19.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-4-paris/23.jpg" width="1691" height="1200")
+
+mixin teaser__media--5
+    .teaser__image.teaser__image--cover.teaser__image--top: img(src="products/issue-5-berlin/1.jpg" width="845" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/2.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/3.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/9.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/10.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/14.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/19.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/20.jpg" width="1691" height="1200")
+    .teaser__image.teaser__image--spread: img(src="products/issue-5-berlin/24.jpg" width="1691" height="1200")

@@ -1,0 +1,25 @@
+mixin actions
+    .actions
+        .actions__action
+            .slot
+                .slot__left
+                    .slot__primary
+                        .add
+                            .add__add
+                                button
+                                    label.rarr(for="add") Buy a paper version · 15 €
+                            .add__added Added. <a href="cart.html" class="rarr">Go to cart</a> 
+                            input.add__state(type="checkbox" id="add")
+                    .slot__secondary 48 pages · 148.5 × 210 mm
+        
+        .actions__action
+            .slot
+                .slot__left
+                    .slot__primary
+                        .add
+                            .add__add
+                                button
+                                    label.rarr(for="add2") Buy a PDF-version · 5 €
+                            .add__added Added. <a href="cart.html" class="rarr">Go to cart</a> 
+                            input.add__state(type="checkbox" id="add2")
+                    .slot__secondary Instant download

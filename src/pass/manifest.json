@@ -1,0 +1,15 @@
+{
+  "background_color": "#ffffff",
+  "description": "Hi! I’m Aleksey — a designer and photographer from Prague. I’m publishing my own magazine. Below you can buy paper and digital copies",
+  "display": "fullscreen",
+  "name": "Magazine",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Magazine",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "./images/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "./images/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

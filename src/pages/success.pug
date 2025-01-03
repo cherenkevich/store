@@ -1,0 +1,40 @@
+include ../blocks/_
+
+doctype html
+html.html.html--success(lang="en")
+    +head
+    
+    body 
+        .app
+            .app__header
+                .app__column
+                    +header
+            
+            .app__cart
+                +cart
+
+            .app__heading
+                .app__column
+                    h1.heading Successful payment
+            
+            .app__list
+                .app__column
+                    .list
+                        .list__row
+                            +slot--download('issue-2-paris', 'Issue 2. Paris. The Humans')
+
+                        .list__row
+                            +slot--download('issue-5-berlin', 'Issue 5. Berlin')
+            
+            .app__text 
+                .app__column
+                    .text
+                        p The paper magazines will be shipped in&nbsp;1-2 working days to&nbsp;Křižíkova 710/30, 18600, Praha, Czech Republic for Aliaksei Charankevich. 
+                        p The digital magazines also has been sent to&nbsp;your e-mail: <span class="email">cherenkevich.com@&#8203;gmail.com</span>.
+                        p.pale In&nbsp;order to&nbsp;change the&nbsp;shipping details, please, send a&nbsp;letter to <a href="mailto:cherenkevich.com@gmail.com?subject=Magazine">cherenkevich.com@&#8203;gmail.com</a>.
+                
+            .app__footer
+                .app__column
+                    +footer
+
+        +foot
