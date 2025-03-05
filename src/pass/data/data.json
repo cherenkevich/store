@@ -1,4 +1,30 @@
 {
+    "issue-6-rome": {
+        "id": "issue-6-rome",
+        "title": "Issue 6. Rome",
+        "type": "paper",
+        "price": "15",
+        "cover": ["issue-6-rome/1.jpg", 845, 1200],
+        "meta": "48 pages · 148.5 × 210 mm",
+        "images": [
+            ["issue-6-rome/5.jpg", 1691, 1200],
+            ["issue-6-rome/7.jpg", 1691, 1200],
+            ["issue-6-rome/12.jpg", 1691, 1200],
+            ["issue-6-rome/15.jpg", 1691, 1200],
+            ["issue-6-rome/17.jpg", 1691, 1200],
+            ["issue-6-rome/19.jpg", 1691, 1200]
+        ],
+        "description": "<p>I wanted to&nbsp;have one foot in&nbsp;the sea and the&nbsp;other in&nbsp;civilization. So&nbsp;Fiumicino seemed like the&nbsp;perfect spot to&nbsp;stay&nbsp;— until I&nbsp;realized getting to&nbsp;Rome from there without a&nbsp;60-euro taxi was nearly impossible. In&nbsp;the&nbsp;end, we spent as&nbsp;much on&nbsp;rides between the city and the coast as&nbsp;we&nbsp;could have on&nbsp;a&nbsp;flight to&nbsp;another warm country...</p><p>But inspiration is priceless. One evening in&nbsp;Rome, I&nbsp;found a&nbsp;restaurant with a&nbsp;wall full of&nbsp;black-and-white street photos. That’s when it clicked: if&nbsp;I&nbsp;were ever to&nbsp;make a&nbsp;black-and-white zine, this was the place for&nbsp;it. Rome’s character isn’t in&nbsp;its colors but&nbsp;in&nbsp;its light and&nbsp;shadows, in&nbsp;the way the&nbsp;city moves and breathes. So&nbsp;here it&nbsp;is&nbsp;— my Rome, raw and&nbsp;timeless, captured in&nbsp;black and&nbsp;white.</p>",
+        "pdf": "issue-6-rome-pdf"
+    },
+    "issue-6-rome-pdf": {
+        "id": "issue-6-rome-pdf",
+        "title": "Issue 6. Rome",
+        "type": "pdf",
+        "price": "5",
+        "download": "/pdf/6-rome-495491.pdf",
+        "parent": "issue-6-rome"
+    },
     "issue-5-berlin": {
         "id": "issue-5-berlin",
         "title": "Issue 5. Berlin",
